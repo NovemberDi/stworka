@@ -1,0 +1,128 @@
+:root {
+    --percent: 3;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: Inter;
+}
+
+body {
+    background-color: #5e5e5e;
+}
+
+.block {
+    width: 741px;
+    height: 91px;
+    background-color: #3579F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 170px;
+    height: 40px;
+    background-color: #F4F8FF;
+    padding: 10px, 32px, 10px, 32px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(0, -50%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4777ED;
+    cursor: pointer;
+}
+
+.loader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 22px;
+    transform: translate(0, -50%);
+    height: 60px;
+    width: 60px;
+}
+
+svg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.loader-progress {
+    stroke-dasharray: calc(var(--percent)*1.86) 502.4;
+    transform: rotate(-87deg);
+    transform-origin: 50% 50%;
+}
+
+.loader-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.message-title {
+    position: absolute;
+    left: 98px;
+    width: 76px;
+    height: 18px;
+    top: 12px;
+    left: 98px;
+    border-radius: 40px;
+    background-color: #2364DB;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.08px;
+}
+
+.message-text {
+    position: absolute;
+    top: 34px;
+    left: 98px;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.17px;
+}
+
+.message-sub-text {
+    position: absolute;
+    left: 98px;
+    bottom: 15px;
+
+    width: 389px;
+    height: 18px;
+
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    color: #FFFFFF;
+    white-space: nowrap;
+    letter-spacing: 0.071px;
+}
